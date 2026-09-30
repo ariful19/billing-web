@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  --app-surface: #F7F8FA;
+  --app-panel: #FFFFFF;
+  --app-muted-panel: #EEF2F6;
+  --app-text: #202328;
+  --app-muted-text: #667085;
+  --app-border: #D8DEE8;
+  --app-accent-soft: #E4F3EA;
+  --app-warning-soft: #FFF3D6;
+  --app-danger-soft: #FDE7E9;
+}
+
+.dark-theme {
+  --app-surface: #111417;
+  --app-panel: #1A1F24;
+  --app-muted-panel: #232A31;
+  --app-text: #F2F5F7;
+  --app-muted-text: #A8B0BA;
+  --app-border: #343D47;
+  --app-accent-soft: #173624;
+  --app-warning-soft: #3A2B0E;
+  --app-danger-soft: #3C171D;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--app-surface);
+  color: var(--app-text);
+}
+
+.win-panel {
+  background-color: var(--app-panel);
+  border: 1px solid var(--app-border);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.win-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: var(--app-text);
+}
+
+.win-input {
+  width: 100%;
+  border: 1px solid var(--app-border);
+  background-color: var(--app-surface);
+  color: var(--app-text);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.win-input:focus {
+  border-color: #0f766e;
+}
+
+.win-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 5px 12px;
+  font-size: 12.5px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid var(--app-border);
+  background-color: var(--app-panel);
+  color: var(--app-text);
+  cursor: pointer;
+  transition: background-color 0.12s ease;
+}
+
+.win-btn:hover {
+  background-color: var(--app-muted-panel);
+}
+
+.win-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 5px 14px;
+  font-size: 12.5px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #047857;
+  background-color: #059669;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.12s ease;
+}
+
+.win-btn-primary:hover {
+  background-color: #047857;
+}

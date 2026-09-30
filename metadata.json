@@ -1,0 +1,5 @@
+{
+  "name": "Retail Billing",
+  "description": "Billing and basic accounting desktop application for retail shops with POS sales, supplier purchases, inventory stock tracking, party ledgers, cash book, and automated double-entry accounting.",
+  "requestFramePermissions": []
+}
